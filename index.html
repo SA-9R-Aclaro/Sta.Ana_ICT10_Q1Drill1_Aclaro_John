@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Average Finder</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+        </head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #average, #result {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="zen-dots-regular">Quiz Average Calculator</h2>
+
+    <div class="input-group">
+        <p for="score1">Quiz 1:</p>
+        <input id="score1" type="number" min="0" max="100" placeholder="Enter score 1">
+    </div>
+
+    <div class="input-group">
+        <label for="score2">Quiz 2:</label>
+        <input id="score2" type="number" min="0" max="100" placeholder="Enter score 2">
+    </div>
+    <div class="input-group">
+        <p for="score3">Quiz 3:</p>
+        <input id="score3" type="number" min="0" max="100" placeholder="Enter score 3">
+    </div>
+    
+        <button py-click="compute_average" id="gFonts">Compute</button>
+
+       <p id="gFonts">Average: <span id="average"></span></p>
+        <p id="gFonts">Passed? <span id="result"></span></p>
+    
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
